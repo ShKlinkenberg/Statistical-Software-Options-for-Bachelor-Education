@@ -11,11 +11,11 @@ format:
 
 Statistical analysis plays a critical role in social science education, equipping students with essential skills for data analysis, research, and evidence-based decision-making. Selecting the right statistical software for bachelor education is crucial to meet learning objectives, improve engagement, and prepare students for professional roles. This report outlines and evaluates several statistical software options suitable for undergraduate education, highlighting their strengths, weaknesses, and possible combinations for optimal learning outcomes.
 
-This report was commissioned by the collage of communication science at the University of Amsterdam. The report aims to provide an overview of statistical software options and provide recommendations for implementation. 
+This report was commissioned by the collage of communication science at the University of Amsterdam. The report aims to provide an overview of statistical software options and provide recommendations for implementation.
 
 ## Statistical Software Options
 
-The following chapters give an overview of the different options available for under graduate education, providing an overview of the pro's and con's per application. 
+The following chapters give an overview of the different options available for under graduate education, providing an overview of the pro's and con's per application. we will cover the multiple applications ranging from SPSS to Python and Jupyter Notebooks and LLM ChatGPT Data Analyst. 
 
 ### SPSS
 
