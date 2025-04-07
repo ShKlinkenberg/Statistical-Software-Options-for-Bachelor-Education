@@ -33,7 +33,7 @@ We broadly define five categories of software:
 
 1. Proprietary Statistical software with a graphical user interface (GUI)
     * [SPSS](https://www.ibm.com/spss)
-    * [Stata](https://www.stata.com)
+    * [STATA](https://www.stata.com)
 2. Open source statistical software with a graphical user interface (GUI)
     * [Jasp](https://jasp-stats.org)
     * [Jamovi](https://www.jamovi.org)
@@ -49,9 +49,15 @@ In the following chapters we will reflect on the five software categories.
 
 ### Proprietary Statistical software with a graphical user interfac
 
+A general benefit of the graphical user interface software packages is that apart from the relative ease of use, the different analysis already provide multiple aditional analysis for assumption check. post hoc or contrast analysis and visualizations. 
+
+And altough the software is graphical in nature, it still provides syntax for reproduction and transparency in terms of open science. 
+
 #### SPSS
 
 As the department is currently using SPSS, we will not go into detail about this software. Though it is worth mentioning the benefits of staying with SPSS for undergraduate education. Though many of our scientific staff are using R and Python, SPSS is still widely used in the department. A change away from SPSS would require a significant investment in time and resources in retraining employees, as well as a change in the curriculum.
+
+#### STATA
 
 
 
