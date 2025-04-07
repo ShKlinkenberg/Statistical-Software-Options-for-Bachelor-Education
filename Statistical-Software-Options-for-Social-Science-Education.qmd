@@ -5,6 +5,8 @@ date: last-modified
 format:
   pdf:
     toc: TRUE
+  html:
+    toc: TRUE
 ---
 
 ## Introduction
@@ -13,9 +15,75 @@ Statistical analysis plays a critical role in social science education, equippin
 
 This report was commissioned by the college of communication science at the University of Amsterdam. The report aims to provide an overview of statistical software options and provide recommendations for implementation. 
 
+The current software used in the curriculum is SPSS, which is widely used in social science research. However, there are many other options available that may be more suitable for undergraduate education. The report will evaluate these options based on their features, advantages, limitations, and use cases.
+
+Within the department we see a growing adoption in open-source software use, such as R and Python. The research field is also moving towards open-source software, with many researchers using R and Python for their work. This trend is likely to continue. Though considering we educate our students in the bachelor program to become scientific practitioners, we need to consider the software they will use in their future careers, which is not necessarily a scientific career.
+
+A second consideration is the the learning curve and didactically bennefits of the software. The software should be easy to learn and use, and should provide a good balance between functionality and usability. The software should also be suitable for the level of the students, and should provide a good introduction to statistical analysis.
+
+The third an final consideration is about a single solution versus a combination of solutions. The software should be suitable for the entire curriculum, and should provide a good introduction to statistical analysis. However, it is also important to consider the possibility of using multiple software packages in the curriculum, as this can provide students with a broader range of skills and knowledge.
+
+In the following chapters, we will give an overview of the different software options available for undergraduate education, and provide scenarios for implementation. 
+
 ## Statistical Software Options
 
-The following chapters give an overview of the different options available for under graduate education, providing an overview of the pro's and con's per application. we will cover multiple applications ranging from SPSS to Python and Jupyter Notebooks and LLM ChatGPT Data Analyst GPT. 
+The following chapters give an overview of the different options available for under graduate education, providing an overview and reflection per application.
+
+We broadly define five categories of software:
+
+1. Proprietary Statistical software with a graphical user interface (GUI)
+    * [SPSS](https://www.ibm.com/spss)
+    * [Stata](https://www.stata.com)
+2. Open source statistical software with a graphical user interface (GUI)
+    * [Jasp](https://jasp-stats.org)
+    * [Jamovi](https://www.jamovi.org)
+3. Open source programming languages with a command line interface (CLI)
+    * [R](https://cran.r-project.org) + [Rstudio](https://posit.co/download/rstudio-desktop/)
+    * [Python](https://www.python.org) + [NumPy](https://numpy.org)
+4. Proprietary Large Language Models
+    * [OpenAI](https://openai.com): Data Analyst GPT
+5. Proprietary spreadsheet
+    * [Excel](https://www.microsoft.com/nl-nl/microsoft-365/excel?market=nl) + [Analysis Toolpack](https://support.microsoft.com/nl-nl/office/analysis-toolpak-laden-in-excel-6a63e598-cd6d-42e3-9317-6b40ba1a66b4)
+    
+In the following chapters we will reflect on the five software categories.
+
+### Proprietary Statistical software with a graphical user interfac
+
+#### SPSS
+
+As the department is currently using SPSS, we will not go into detail about this software. Though it is worth mentioning the benefits of staying with SPSS for undergraduate education. Though many of our scientific staff are using R and Python, SPSS is still widely used in the department. A change away from SPSS would require a significant investment in time and resources in retraining employees, as well as a change in the curriculum.
+
+
+
+## Combinations of Software for Optimal Learning
+
+From a pedagogical perspective, combining different statistical software tools can enhance students' learning experiences and prepare them for diverse career paths. In this chapter we discuss some recommended combinations based on curriculum objectives and careeer paths.
+
+Curriculum objectives can focus on basic statistics, advanced analysis, data science, or computational social science. A main consideration is if the objectives are focused on a narrow specialization or a broad skill set.
+
+
+Career paths may include research, industry, or policy analysis.
+
+- SPSS + Excel: For introductory statistics courses.  
+- R with RStudio + Jupyter Notebook: For data science and computational courses.  
+- Python + Jupyter Notebook: For exploratory data analysis and machine learning.  
+- R with RStudio + LLM ChatGPT Data Analyst: Combines learning support with coding practice.  
+- Python + LLM ChatGPT Data Analyst: For machine learning, computational social science, or large-scale data analysis.  
+
+## Recommendations
+
+- Introductory Courses: Use Excel and SPSS for first-year students.  
+- Advanced Courses: Use R, Python, and Jupyter for advanced data science or computational courses.  
+- Supplemental Learning: Use LLM-based AI assistants to reduce learning obstacles.  
+
+## Conclusion
+
+Each statistical software package has unique strengths and use cases. SPSS and Excel are excellent for basic statistics, while R, Python, and Jupyter Notebook prepare students for advanced analysis. The use of AI-based LLMs as personalized assistants can bridge knowledge gaps in real time.
+
+
+
+
+
 
 ### SPSS
 
@@ -162,26 +230,3 @@ Limitations:
 Use Cases:  
 LLMs can supplement learning by providing personalized support for students working with R, Python, or Excel.
 
-## Combinations of Software for Optimal Learning
-
-From a pedagogical perspective, combining different statistical software tools can enhance students' learning experiences and prepare them for diverse career paths. In this chapter we discuss some recommended combinations based on curriculum objectives and careeer paths.
-
-Curriculum objectives can focus on basic statistics, advanced analysis, data science, or computational social science. A main consideration is if the objectives are focused on a narrow specialization or a broad skill set.
-
-
-Career paths may include research, industry, or policy analysis.
-
-- SPSS + Excel: For introductory statistics courses.  
-- R with RStudio + Jupyter Notebook: For data science and computational courses.  
-- Python + Jupyter Notebook: For exploratory data analysis and machine learning.  
-- R with RStudio + LLM ChatGPT Data Analyst: Combines learning support with coding practice.  
-- Python + LLM ChatGPT Data Analyst: For machine learning, computational social science, or large-scale data analysis.  
-
-## Recommendations
-
-- Introductory Courses: Use Excel and SPSS for first-year students.  
-- Advanced Courses: Use R, Python, and Jupyter for advanced data science or computational courses.  
-- Supplemental Learning: Use LLM-based AI assistants to reduce learning obstacles.  
-
-## Conclusion
-Each statistical software package has unique strengths and use cases. SPSS and Excel are excellent for basic statistics, while R, Python, and Jupyter Notebook prepare students for advanced analysis. The use of AI-based LLMs as personalized assistants can bridge knowledge gaps in real time.
