@@ -71,6 +71,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="Statistical-Software-Options-for-Social-Science-Education_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="Statistical-Software-Options-for-Social-Science-Education_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="Statistical-Software-Options-for-Social-Science-Education_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<style>html{ scroll-behavior: smooth; }</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -116,13 +117,23 @@ window.Quarto = {
   <li><a href="#statistical-software-options" id="toc-statistical-software-options" class="nav-link" data-scroll-target="#statistical-software-options">Statistical Software Options</a>
   <ul class="collapse">
   <li><a href="#proprietary-statistical-software-with-a-graphical-user-interface" id="toc-proprietary-statistical-software-with-a-graphical-user-interface" class="nav-link" data-scroll-target="#proprietary-statistical-software-with-a-graphical-user-interface">Proprietary Statistical software with a graphical user interface</a></li>
-  <li><a href="#open-source-statistical-software" id="toc-open-source-statistical-software" class="nav-link" data-scroll-target="#open-source-statistical-software">Open source statistical software</a></li>
-  <li><a href="#large-language-models" id="toc-large-language-models" class="nav-link" data-scroll-target="#large-language-models">Large Language Models</a></li>
-  <li><a href="#spreadsheet" id="toc-spreadsheet" class="nav-link" data-scroll-target="#spreadsheet">Spreadsheet</a></li>
+  <li><a href="#open-source-statistical-software" id="toc-open-source-statistical-software" class="nav-link" data-scroll-target="#open-source-statistical-software">Open source statistical software</a>
+  <ul class="collapse">
+  <li><a href="#software-with-a-graphical-user-interface" id="toc-software-with-a-graphical-user-interface" class="nav-link" data-scroll-target="#software-with-a-graphical-user-interface">Software with a graphical user interface</a></li>
+  <li><a href="#statistical-programming-languages-with-a-command-line-interface" id="toc-statistical-programming-languages-with-a-command-line-interface" class="nav-link" data-scroll-target="#statistical-programming-languages-with-a-command-line-interface">Statistical programming languages with a command line interface</a></li>
+  </ul></li>
+  <li><a href="#large-language-models" id="toc-large-language-models" class="nav-link" data-scroll-target="#large-language-models">Large Language Models</a>
+  <ul class="collapse">
+  <li><a href="#data-analyst-gpt" id="toc-data-analyst-gpt" class="nav-link" data-scroll-target="#data-analyst-gpt">Data Analyst GPT</a></li>
+  <li><a href="#llm-in-ide" id="toc-llm-in-ide" class="nav-link" data-scroll-target="#llm-in-ide">LLM in IDE</a></li>
+  </ul></li>
+  <li><a href="#spreadsheets" id="toc-spreadsheets" class="nav-link" data-scroll-target="#spreadsheets">Spreadsheets</a></li>
   </ul></li>
   <li><a href="#combinations-of-software-for-optimal-learning" id="toc-combinations-of-software-for-optimal-learning" class="nav-link" data-scroll-target="#combinations-of-software-for-optimal-learning">Combinations of Software for Optimal Learning</a></li>
   <li><a href="#recommendations" id="toc-recommendations" class="nav-link" data-scroll-target="#recommendations">Recommendations</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a>
+  <ul class="collapse">
   <li><a href="#software-summary" id="toc-software-summary" class="nav-link" data-scroll-target="#software-summary">Software summary</a>
   <ul class="collapse">
   <li><a href="#spss" id="toc-spss" class="nav-link" data-scroll-target="#spss">SPSS</a></li>
@@ -134,6 +145,7 @@ window.Quarto = {
   <li><a href="#jupyter-notebook" id="toc-jupyter-notebook" class="nav-link" data-scroll-target="#jupyter-notebook">Jupyter Notebook</a></li>
   <li><a href="#excel" id="toc-excel" class="nav-link" data-scroll-target="#excel">Excel</a></li>
   <li><a href="#llm-chatgpt-data-analyst-custom-gpt" id="toc-llm-chatgpt-data-analyst-custom-gpt" class="nav-link" data-scroll-target="#llm-chatgpt-data-analyst-custom-gpt">LLM ChatGPT Data Analyst (Custom GPT)</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Statistical-Software-Options-for-Social-Science-Education.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -171,8 +183,8 @@ window.Quarto = {
 </header>
 
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
 <p>Statistical analysis plays a critical role in social science education, equipping students with essential skills for data analysis, research, and evidence-based decision-making. Selecting the right statistical software for bachelor education is crucial to meet learning objectives, improve engagement, and prepare students for professional roles. This report outlines and evaluates several statistical software options suitable for undergraduate education, highlighting their strengths, weaknesses, and possible combinations for optimal learning outcomes.</p>
 <p>This report was commissioned by the schools of communication science at the University of Amsterdam. The report aims to provide an overview of statistical software options and provide recommendations for implementation.</p>
 <p>The current software used in the curriculum is SPSS, which is widely used in social science research. However, there are many other options available that may be more suitable for undergraduate education. The report will evaluate these options based on their features, advantages, limitations, and use cases.</p>
@@ -181,8 +193,8 @@ window.Quarto = {
 <p>The third an final consideration is about a single solution versus a combination of solutions. The software should be suitable for the entire curriculum, and should provide a good introduction to statistical analysis. However, it is also important to consider the possibility of using multiple software packages in the curriculum, as this can provide students with a broader range of skills and knowledge.</p>
 <p>In the following chapters, we will give an overview of the different software options available for undergraduate education, and provide scenarios for implementation.</p>
 </section>
-<section id="statistical-software-options" class="level2">
-<h2 class="anchored" data-anchor-id="statistical-software-options">Statistical Software Options</h2>
+<section id="statistical-software-options" class="level1">
+<h1>Statistical Software Options</h1>
 <p>For this chapter we broadly define five categories of software, and consider some packages for each category. Though the list is not exhaustive, it focusses on the key considerations.</p>
 <ol type="1">
 <li>Proprietary Statistical software with a graphical user interface (GUI)
@@ -210,25 +222,25 @@ window.Quarto = {
 </ul></li>
 </ol>
 <p>In the following chapters we will reflect on the five software categories.</p>
-<section id="proprietary-statistical-software-with-a-graphical-user-interface" class="level3">
-<h3 class="anchored" data-anchor-id="proprietary-statistical-software-with-a-graphical-user-interface">Proprietary Statistical software with a graphical user interface</h3>
+<section id="proprietary-statistical-software-with-a-graphical-user-interface" class="level2">
+<h2 class="anchored" data-anchor-id="proprietary-statistical-software-with-a-graphical-user-interface">Proprietary Statistical software with a graphical user interface</h2>
 <p>A general benefit of the graphical user interface software packages is that apart from the relative ease of use, the different analysis already provide multiple additional options for assumption checks, Post hoc and contrast analysis and visualizations.</p>
 <p>And altough the software is graphical in nature, it still provides syntax for reproduction and transparency in terms of open science.</p>
 <p>As the department is currently using SPSS, we will not go into detail about this software. Though it is worth mentioning the benefits of staying with SPSS for undergraduate education. Though many of our scientific staff are using R and Python, SPSS is still widely used in the department. A change away from SPSS would require a significant investment in time and resources in retraining employees, as well as a change in the curriculum.</p>
 <p>A switch to STATA would not be an obvious option, as it is roughly the same as SPSS. It provides roughly the same set of analysis types including Bayesian analysis like SPSS does. It is also a proprietary software package, which means that it is not open source and requires a license to use. There seem to be no clear benefits for such a switch.</p>
 </section>
-<section id="open-source-statistical-software" class="level3">
-<h3 class="anchored" data-anchor-id="open-source-statistical-software">Open source statistical software</h3>
+<section id="open-source-statistical-software" class="level2">
+<h2 class="anchored" data-anchor-id="open-source-statistical-software">Open source statistical software</h2>
 <p>From a cost perspective, going opensource seems like a logical option, though it has to be considered that even with such a change our university would not stop paying for SPSS licenses. As these licences are procured at the national level through SURF, and other departments still sticking to proprietary software would still need access. Though a switch to open source would be beneficial to students, as they would not have to pay the reduced student licencing costs.</p>
 <p>Liability of opensource software is often mentioned as a disadvantage, though it can be debated to what extent this really is a problem. There is usually a large community of users who can help with any issues that may arise. Though this is dependent on the popularity of the software.</p>
-<section id="software-with-a-graphical-user-interface" class="level4">
-<h4 class="anchored" data-anchor-id="software-with-a-graphical-user-interface">Software with a graphical user interface</h4>
+<section id="software-with-a-graphical-user-interface" class="level3">
+<h3 class="anchored" data-anchor-id="software-with-a-graphical-user-interface">Software with a graphical user interface</h3>
 <p>Both <a href="https://jasp-stats.org">JASP</a> and <a href="https://www.jamovi.org">Jamovi</a> are open source statistical software packages that provide a graphical user interface. They are both based on R, and provide a similar set of analysis types as SPSS. They are both easy to use and provide a good introduction to statistical analysis. Though JASP provides an additional suite of Bayesian analysis, and is developed and maintained at the department of Psychology of the University of Amsterdam. Jamovi is a spin-off of the JASP project and maintained by a <a href="https://www.jamovi.org/about.html">core team of developers</a>.</p>
 <p>Though both are based on R and can produce syntax for the analysis that are performed, both use their own packages. For example a t test in R would be run with the function <code>t.test()</code>, while in JASP and Jamovi the funtions are <code>jaspTTests::TTestIndependentSamples()</code> and <code>jmv::ttestIS()</code> respectively. This means that the syntax produced by JASP and Jamovi is not directly usable in R, and vice versa. This is a disadvantage for students who want to transition to R in a masters program, as they will have to learn a different set of functions.</p>
 <p>Both packages are still struggling with the data editor. The graphical user interface for both is not really intuitive, though both do allow to use R code in the data editor.</p>
 </section>
-<section id="statistical-programming-languages-with-a-command-line-interface" class="level4">
-<h4 class="anchored" data-anchor-id="statistical-programming-languages-with-a-command-line-interface">Statistical programming languages with a command line interface</h4>
+<section id="statistical-programming-languages-with-a-command-line-interface" class="level3">
+<h3 class="anchored" data-anchor-id="statistical-programming-languages-with-a-command-line-interface">Statistical programming languages with a command line interface</h3>
 <p>One of the main benefits of using a statistical programming language is that it allows for more didactical use cases. Where the graphical user interface software packages are mainly used for data analysis, the programming languages can also be used for learning the intermediate steps in statistics. For example: An independent t test in a textbook is often mathematically indicated as follows.</p>
 <p><span class="math display">\[t = \frac{\bar{x} - \mu}{s_x}\]</span></p>
 <p>Using a statistical programming language this can be made more tangible by using code. It allows students to focus on the concepts without the fear of miscalculations.</p>
@@ -247,19 +259,26 @@ window.Quarto = {
 <p>This provides students the tools to understand the concepts behind the analysis, and in addition, introduces basic programming skills. For students that will only do the undergraduate program, this is a valuable help in learning statistics. And for students that will continue with a master program, this is a good introduction to programming.</p>
 <p>Though a statistical programming language provides many benefits, as it aligns with core values like open science and transparency, it also poses some hurdles in the learning process. These are mostly related to importing data, summarizing results and visualization. With the GUI based software packages these tasks are quite trivial, but for the CLI based interfaces the many options and packages make these tasks often overly complicated. Choosing a single approach like R <a href="https://www.tidyverse.org">Tidyverse</a> will greatly simplify the abundance of different methods.</p>
 <p>An additional hurdle is that extensive assumptions checks are often not available in the CLI based software packages. These either need additional packages or need to be done manually. For example, for the check on homoscedasticity, the <code>lm()</code> function in R does not provide a check for this assumption. For this an additional package would be needed or a scatterplot with residuals and predicted values would need to be created. Though it could be argued that these additional steps enhance the skills of students.</p>
-<p>While R provides a more statistical computing environment, Python is more a general programming environment, but with the addition of <a href="https://numpy.org">NumPy</a> package it can be used for statistical analysis. Though additional packages like <a href="https://pandas.pydata.org/pandas-docs/stable/index.html">pandas</a> is needed to work with data frames and importing data.</p>
+<p>While R provides a more statistical computing environment, Python is more a general programming environment, but with the addition of <a href="https://numpy.org">NumPy</a> package it can be used for statistical analysis. Though additional packages like <a href="https://pandas.pydata.org/pandas-docs/stable/index.html">pandas</a> is needed to work with data frames and importing data. The use of Python or R can be greatly simplified by using <a href="https://jupyter.org">Jupyter</a> Notebook, which provides a web-based interface for writing and running Python code. Jupyter Notebook allows for interactive data analysis and visualization, making it easier for students to learn and experiment with Python, without the need for installation or configuration. Though there is an argument to be made that the use of Jupyter Notebook does not provide the skills of using an integrated development environment (IDE) like <a href="https://posit.co/download/rstudio-desktop/">RStudio</a> or <a href="PyCharm">PyCharm</a>.</p>
 </section>
 </section>
-<section id="large-language-models" class="level3">
-<h3 class="anchored" data-anchor-id="large-language-models">Large Language Models</h3>
+<section id="large-language-models" class="level2">
+<h2 class="anchored" data-anchor-id="large-language-models">Large Language Models</h2>
 <p>The use of large language models (LLMs) like ChatGPT in education is a rapidly evolving field. These models can assist students in various ways, such as providing explanations, generating code snippets, and answering questions related to statistical analysis. The integration of LLMs into educational settings can enhance the learning experience by offering personalized support and immediate feedback.</p>
-<section id="data-analyst-gpt" class="level4">
-<h4 class="anchored" data-anchor-id="data-analyst-gpt">Data Analyst GPT</h4>
-<p><a href="https://mitsloanedtech.mit.edu/ai/tools/data-analysis/how-to-use-chatgpts-advanced-data-analysis-feature/">ChatGPT, combined with the Data Analyst GPT</a>, offers a powerful toolset for researchers and data scientists. By leveraging natural language processing and advanced data analysis capabilities, users can seamlessly interact with their data, ask complex questions, and receive insightful analyses without needing extensive coding skills. This combination can streamline exploratory data analysis, automate repetitive tasks, and generate visualizations. See <a href="#fig-ChatGPT-analysis" class="quarto-xref">Figure&nbsp;1</a> for an example of a moderation analysis generated by ChatGPT.</p>
-<div id="fig-ChatGPT-analysis" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<section id="data-analyst-gpt" class="level3">
+<h3 class="anchored" data-anchor-id="data-analyst-gpt">Data Analyst GPT</h3>
+<p>ChatGPT, combined with the <a href="https://mitsloanedtech.mit.edu/ai/tools/data-analysis/how-to-use-chatgpts-advanced-data-analysis-feature/">Data Analyst GPT</a>, offers a powerful toolset for researchers and data scientists. By leveraging natural language processing and advanced data analysis capabilities, users can seamlessly interact with their data, ask complex questions, and receive insightful analyses without needing extensive coding skills. This combination can streamline exploratory data analysis, automate repetitive tasks, and generate visualizations. See <a href="#fig-ChatGPT-analysis" class="quarto-xref">Figure&nbsp;1</a> for an example of a moderation analysis generated by ChatGPT.</p>
+<div id="fig-ChatGPT-analysis" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ChatGPT-analysis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="ScatterPlot.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:60.0%">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="ScatterPlot.png" class="img-fluid figure-img"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="ChatGPT.png" class="img-fluid figure-img"></p>
+</div>
+</div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ChatGPT-analysis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Moderation plot generated by ChatGPT, view entire chat <a href="https://chatgpt.com/share/6810d51c-48f8-8007-8691-e5b07b12c063">here</a>
@@ -269,23 +288,51 @@ Figure&nbsp;1: Moderation plot generated by ChatGPT, view entire chat <a href="h
 <p>For students, this means they can focus more on interpreting results and deriving insights, rather than spending time on data wrangling and coding. The Data Analyst GPT can assist in generating statistical summaries, performing hypothesis testing, and even creating predictive models, making it an invaluable asset for both exploratory and confirmatory research. This integration empowers students to quickly prototype and iterate on their analyses, reducing the time from data collection to actionable insights.</p>
 <p>The Data Analyst GPT leverages Python with appropriate packages to run analysis and visualizations. For all analysis the Python code is provided. But as LLM’s are probabilistic in nature, mistakes are still possible. Analysis still need to be checked, which leads to the following problem for use in education. In order to check for inaccuracies, students would need to be able to read the Python code. Hence, Python would need to be tought as a prerequisite for using LLM based solutions.</p>
 </section>
-<section id="llms-in-ide" class="level4">
-<h4 class="anchored" data-anchor-id="llms-in-ide">LLM’s in IDE</h4>
+<section id="llm-in-ide" class="level3">
+<h3 class="anchored" data-anchor-id="llm-in-ide">LLM in IDE</h3>
 <p>The use of large language models (LLM) in integrated development environments (IDE) like RStudio and Jupyter Notebook can significantly enhance the learning experience for students. By integrating LLMs into these environments, students can receive real-time assistance while coding, making it easier to understand complex concepts and troubleshoot issues. This interactive support can help bridge the gap between theoretical knowledge and practical application, allowing students to focus on learning rather than getting stuck on coding challenges.</p>
 <p>Though it can also impede the learning proces as students can lean to heavyly on the LLM for coding assistance, potentially hindering their ability to develop independent problem-solving skills. This reliance can lead to a lack of understanding of the underlying principles and concepts, as students may become accustomed to receiving instant solutions without fully grasping the reasoning behind them. To mitigate this risk, it is essential to encourage students to engage with the material actively, seek explanations for the code generated by the LLM, and practice coding independently.</p>
+<div id="fig-copilot" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-copilot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="copilot.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-copilot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: GitHub Copilot in RStudio. Code suggestions for a linear regression model.
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-copilot" class="quarto-xref">Figure&nbsp;2</a> shows an example of GitHub Copilot in RStudio, where the LLM suggests code for a scatter plot in light grey. The suggested code takes the context of the previous code into account. Though, as can be seen, the comments requested a check on homoscedasticity, but the suggested code does not provide this. This shows the probabilistic nature of LLMs, and the need for students to check the code generated by the LLM. For students to use these types of integrations, they would need to be familiar with the programming language used in the IDE. This means that students would need to learn R or Python as a prerequisite for using LLMs in RStudio or Jupyter Notebook.</p>
 </section>
 </section>
-<section id="spreadsheet" class="level3">
-<h3 class="anchored" data-anchor-id="spreadsheet">Spreadsheet</h3>
+<section id="spreadsheets" class="level2">
+<h2 class="anchored" data-anchor-id="spreadsheets">Spreadsheets</h2>
 <p>Using Excel to teach statistics, especially in combination with the <a href="https://support.microsoft.com/nl-nl/office/analysis-toolpak-laden-in-excel-6a63e598-cd6d-42e3-9317-6b40ba1a66b4">Analysis Toolpack</a>, offers a very accessible and practical approach for students to learn statistical concepts. Many students are already familiar with Excel’s basic functions, so they can focus more quickly on understanding statistical techniques rather than struggling with a completely new software environment. The familiarity of Excel lowers the barrier to entry and allows instructors to emphasize the interpretation of results rather than the mechanics of calculation.</p>
-<p>The Analysis Toolpak extends Excel’s capabilities by offering ready-to-use procedures for key statistical analyses, such as descriptive statistics, correlation, regression, t-tests, and ANOVA. This enables students to perform fairly advanced analyses without needing to code or use more complex statistical packages right away. It also helps them to see the direct connection between data, formulas, and outputs. Students can watch calculations unfold in the spreadsheet, offering transparency that is sometimes hidden in black-box statistical software <a href="#fig-excel-t" class="quarto-xref">Figure&nbsp;2</a>.</p>
-<div id="fig-excel-t" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<p>The Analysis Toolpak extends Excel’s capabilities by offering ready-to-use procedures for key statistical analyses, such as descriptive statistics, correlation, regression, t-tests, and ANOVA. This enables students to perform fairly advanced analyses without needing to code or use more complex statistical packages right away. It also helps them to see the direct connection between data, formulas, and outputs, as shown in <a href="#fig-excel-t" class="quarto-xref">Figure&nbsp;3</a>. Students can watch calculations unfold in the spreadsheet, offering transparency that is sometimes hidden in black-box statistical software.</p>
+<div id="fig-excel-t" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-excel-t-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="ExcelT-test.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:40.0%">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ExcelT-test.png" class="img-fluid figure-img"></p>
+<figcaption>T test calculated in Excel</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="DataAnalysis.png" class="img-fluid figure-img"></p>
+<figcaption>Data Analysis Tool</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-excel-t-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: T test calculated in Excel.
+Figure&nbsp;3: T test calculated in Excel, and a few analysis options in the analysis tool.
 </figcaption>
 </figure>
 </div>
@@ -294,36 +341,66 @@ Figure&nbsp;2: T test calculated in Excel.
 <p>Another cautionary point is that Excel allows multiple data types in the same column, unlike statistical software such as SPSS, which enforces a more structured data format. This flexibility can lead to inconsistencies or errors in analysis if data types are mixed, such as combining numeric and text data in a column that should be purely numeric. This can cause issues during calculations or when using the Analysis Toolpak, as functions may return errors or unexpected results. While it’s a powerful tool for teaching and learning, these limitations mean that instructors should emphasize the importance of careful data management and double-checking results.</p>
 </section>
 </section>
-<section id="combinations-of-software-for-optimal-learning" class="level2">
-<h2 class="anchored" data-anchor-id="combinations-of-software-for-optimal-learning">Combinations of Software for Optimal Learning</h2>
-<p>From a pedagogical perspective, combining different statistical software tools can enhance students’ learning experiences and prepare them for diverse career paths. In this chapter we discuss some recommended combinations based on curriculum objectives and careeer paths.</p>
-<p>Curriculum objectives can focus on basic statistics, advanced analysis, data science, or computational social science. A main consideration is if the objectives are focused on a narrow specialization or a broad skill set.</p>
-<p>Career paths may include research, industry, or policy analysis.</p>
-<ul>
-<li>SPSS + Excel: For introductory statistics courses.<br>
-</li>
-<li>R with RStudio + Jupyter Notebook: For data science and computational courses.<br>
-</li>
-<li>Python + Jupyter Notebook: For exploratory data analysis and machine learning.<br>
-</li>
-<li>R with RStudio + LLM ChatGPT Data Analyst: Combines learning support with coding practice.</li>
-<li>Python + LLM ChatGPT Data Analyst: For machine learning, computational social science, or large-scale data analysis.</li>
-</ul>
+<section id="combinations-of-software-for-optimal-learning" class="level1">
+<h1>Combinations of Software for Optimal Learning</h1>
+<p>From a pedagogical perspective, combining different statistical software tools can enhance students’ learning experiences and prepare them for diverse career paths. In this chapter we discuss combinations based on curriculum objectives and careeer paths.</p>
+<p>Curriculum objectives can focus on basic statistics, advanced analysis, data science, or computational social science. A main consideration is if the objectives are focused on a narrow specialization or a broad skill set. Career paths may include research, industry, or policy analysis.</p>
+<p>The suggested combinations below are aligned with the curriculum objectives and intended career paths of students in both the bachelor’s and master’s programs. They take into account the final qualifications (end terms) of the bachelor’s program as well as those of the various master’s programs, including the research master’s. Together, the combinations outline a coherent five-year trajectory.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Bachelor 1</th>
+<th>Bachelor 2</th>
+<th>Bachelor 3</th>
+<th>Master 1</th>
+<th>Master 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Excel + SPSS</td>
+<td>SPSS + R</td>
+<td>SPSS or R</td>
+<td>SPSS or R</td>
+<td>R + Python</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>SPSS</td>
+<td>SPSS + R</td>
+<td>SPSS or R</td>
+<td>SPSS or R</td>
+<td>R + Python</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>R</td>
+<td>R + Python</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Python</td>
+<td>Python + LLM</td>
+<td>Python + LLM</td>
+<td>Python + LLM</td>
+<td>Python + LLM</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="recommendations" class="level2">
-<h2 class="anchored" data-anchor-id="recommendations">Recommendations</h2>
-<ul>
-<li>Introductory Courses: Use Excel and SPSS for first-year students.<br>
-</li>
-<li>Advanced Courses: Use R, Python, and Jupyter for advanced data science or computational courses.<br>
-</li>
-<li>Supplemental Learning: Use LLM-based AI assistants to reduce learning obstacles.</li>
-</ul>
+<section id="recommendations" class="level1">
+<h1>Recommendations</h1>
 </section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Each statistical software package has unique strengths and use cases. SPSS and Excel are excellent for basic statistics, while R, Python, and Jupyter Notebook prepare students for advanced analysis. The use of AI-based LLMs as personalized assistants can bridge knowledge gaps in real time.</p>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
 </section>
+<section id="appendix" class="level1">
+<h1>Appendix</h1>
 <section id="software-summary" class="level2">
 <h2 class="anchored" data-anchor-id="software-summary">Software summary</h2>
 <section id="spss" class="level3">
@@ -535,6 +612,7 @@ Useful for introductory courses where students learn about data organization, de
 </ul>
 <p>Use Cases:<br>
 LLMs can supplement learning by providing personalized support for students working with R, Python, or Excel.</p>
+</section>
 </section>
 </section>
 
@@ -944,4 +1022,5 @@ LLMs can supplement learning by providing personalized support for students work
 
 
 
+<script src="Statistical-Software-Options-for-Social-Science-Education_files/libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
