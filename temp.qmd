@@ -1,0 +1,14 @@
+---
+title: "temp"
+format: html
+---
+
+The suggested combinations below are aligned with the curriculum objectives and intended career paths of students in both the bachelor’s and master’s programs. They take into account the final qualifications (end terms) of the bachelor’s program as well as those of the various master’s programs, including the research master’s. Together, the combinations outline a coherent five-year trajectory.
+
+ # | Bachelor 1 | Bachelor 2 | Bachelor 3 | Master 1 | Master 2
+--- | --- | --- | --- | --- | ---
+1 | Excel + SPSS | SPSS + R | SPSS or R | SPSS or R | R + Python
+2 | SPSS | SPSS + R | SPSS or R | SPSS or R | R + Python
+3 | R | R | R | R | R + Python
+4 | Python | Python + LLM | Python + LLM | Python + LLM | Python + LLM
+4 | R | R + LLM | R + LLM | R + LLM | Python + LLM
