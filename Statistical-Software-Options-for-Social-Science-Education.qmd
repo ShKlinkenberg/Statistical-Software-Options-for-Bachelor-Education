@@ -5,18 +5,20 @@ date: last-modified
 format:
   pdf:
     toc: TRUE
-    toc-depth: 3
+    toc-depth: 2
   html:
     toc: TRUE
     toc-depth: 3
     smooth-scroll: true
 ---
 
+{{< pagebreak >}}
+
 # Introduction
 
-Statistical analysis plays a critical role in social science education, equipping students with essential skills for data analysis, research, and evidence-based decision-making. Selecting the right statistical software for bachelor education is crucial to meet learning objectives, improve engagement, and prepare students for professional roles. This report outlines and evaluates several statistical software options suitable for undergraduate education, highlighting their strengths, weaknesses, and possible combinations for optimal learning outcomes.
-
 This report was commissioned by the schools of communication science at the University of Amsterdam. The report aims to provide an overview of statistical software options and provide recommendations for implementation. 
+
+Statistical analysis plays a critical role in social science education, equipping students with essential skills for data analysis, research, and evidence-based decision-making. Selecting the right statistical software for bachelor education is crucial to meet learning objectives, improve engagement, and prepare students for professional roles. This report outlines and evaluates several statistical software options suitable for undergraduate education, highlighting their strengths, weaknesses, and possible combinations for optimal learning outcomes.
 
 The current software used in the curriculum is SPSS, which is widely used in social science research. However, there are many other options available that may be more suitable for undergraduate education. The report will evaluate these options based on their features, advantages, limitations, and use cases.
 
@@ -26,7 +28,7 @@ A second consideration is the learning curve and didactic benefits of the softwa
 
 The third an final consideration is about a single solution versus a combination of solutions. The software should be suitable for the entire curriculum, and should provide a good introduction to statistical analysis. However, it is also important to consider the possibility of using multiple software packages in the curriculum, as this can provide students with a broader range of skills and knowledge that can be useful in their future careers.
 
-In the following chapters, we will give an overview of the different software options available for undergraduate education. 
+In the following chapters, we will give an overview of the different software options available for undergraduate education, and provide considerations for their use. We will also provide recommendations for the implementation of statistical software in the curriculum.
 
 # Statistical Software Options
 
@@ -71,7 +73,7 @@ Liability is often mentioned as a disadvantage of open-source software, since th
 
 Both [JASP](https://jasp-stats.org) and [Jamovi](https://www.jamovi.org) are open source statistical software packages that provide a graphical user interface. They are both based on R, and provide a similar set of analysis types as SPSS. They are both easy to use and provide a good introduction to statistical analysis. Though JASP provides an additional suite of Bayesian analysis, and is developed and maintained at the department of Psychology of the University of Amsterdam. Jamovi is a spin-off of the JASP project and maintained by a [core team of developers](https://www.jamovi.org/about.html).
 
-Though both are based on R and can produce syntax for the analysis that are performed, both use their own packages. For example a t test in R would be run with the function `t.test()`, while in JASP and Jamovi the functions are `jaspTTests::TTestIndependentSamples()` and `jmv::ttestIS()` respectively. This means that the syntax produced by JASP and Jamovi is not directly usable in R, and vice verse. This is a disadvantage for students who want to transition to R in a masters program, as they will have to learn a different set of functions.
+Though both are based on R and can produce syntax for the analysis that are performed, both use their own packages. For example a t test in R would be run with the function `t.test()`, while in JASP and Jamovi the functions are `jaspTTests::TTestIndependentSamples()` and `jmv::ttestIS()` respectively. This means that the syntax produced by JASP and Jamovi is not directly usable in R. This is a disadvantage for students who want to transition to R in a masters program, as they will have to learn a different set of functions.
 
 Both packages are still struggling with the data editor. The graphical user interface for both is not really intuitive, though both do allow to use R code in the data editor.
 
@@ -185,6 +187,8 @@ In order to accommodate these different career paths, a multi-software approach 
 
 The following combinations are suggested for the five-year trajectory:
 
+{{< pagebreak >}}
+
 | Study Year | Software | Comments |
 |------------|----------|----------|
 | Bachelor 1 | Excel + SPSS | Excel for statistical calculations and table visualizations; SPSS for introductory statistical analysis. |
@@ -194,6 +198,8 @@ The following combinations are suggested for the five-year trajectory:
 | Master 2 | SPSS / R / Python | Continue with the chosen software from Bachelor 3, depending also on choosing a regular masters of research masters program |
 
 While we recommend a multi-software approach as the most effective strategy to prepare students for diverse career paths, we also recognize that the needs and preferences of different stakeholders may vary. The proposed trajectory should therefore be seen as a flexible framework that can be adapted where necessary, for example to align with specific program objectives, staff expertise, or resource availability, while still supporting the overarching educational goals.
+
+{{< pagebreak >}}
 
 # Appendix
 
@@ -243,7 +249,7 @@ Advantages:
 Limitations:
 
 * Steeper learning curve
-* Expensive licensing model
+* Proprietary software
 
 Use Cases:  
 Ideal for bachelor courses in econometrics, social research methods, and policy analysis.
@@ -324,7 +330,7 @@ Limitations:
 * Requires familiarity with scripting and debugging
 
 Use Cases:  
-Best suited for bachelor courses focusing on advanced statistical analysis, reproducible research, and data science.
+Best suited for bachelor or master courses focusing on advanced statistical analysis, reproducible research, and data science.
 
 ### Python
   
@@ -347,7 +353,7 @@ Limitations:
 * Students need to install and manage libraries and environments
 
 Use Cases:  
-Suitable for advanced bachelor courses in data science, computational social science, and research with large, complex data sets.
+Suitable for advanced bachelor and master courses in data science, computational social science, and research with large, complex data sets.
 
 ### Jupyter Notebook
 
@@ -420,6 +426,8 @@ Limitations:
 Use Cases:  
 LLMs can supplement learning by providing personalized support for students working with R, Python, or Excel.
 
+{{< pagebreak >}}
+
 ## Statistical software use at communication science {#sec-software-use}
 
 In a short survey among the scientific staff of the department of communication science, we asked an open question about the use of statistical software in their research and teaching. The categorized results are shown in @tbl-software-use-categorized. In total we received 64 responses, which is a response rate of about `r round(64/192*100,0)`%. The results in @tbl-software-use show that the majority of the staff uses R (63%) and SPSS (67%) in their research. Python is used by 22%. 
@@ -468,7 +476,8 @@ kable(software.use.raw[,3:11],
   column_spec(6, width = "11%") %>%
   column_spec(7, width = "11%") %>%
   column_spec(8, width = "11%") %>%
-  column_spec(9, width = "11%")
+  column_spec(9, width = "11%") %>%
+  kable_styling(font_size = 7)
 
 ```
 
