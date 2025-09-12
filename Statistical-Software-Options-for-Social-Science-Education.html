@@ -120,7 +120,7 @@ window.Quarto = {
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#statistical-software-options" id="toc-statistical-software-options" class="nav-link" data-scroll-target="#statistical-software-options">Statistical Software Options</a>
   <ul class="collapse">
-  <li><a href="#proprietary-statistical-software-with-a-graphical-user-interface" id="toc-proprietary-statistical-software-with-a-graphical-user-interface" class="nav-link" data-scroll-target="#proprietary-statistical-software-with-a-graphical-user-interface">Proprietary Statistical software with a graphical user interface</a></li>
+  <li><a href="#proprietary-statistical-software" id="toc-proprietary-statistical-software" class="nav-link" data-scroll-target="#proprietary-statistical-software">Proprietary Statistical software</a></li>
   <li><a href="#open-source-statistical-software" id="toc-open-source-statistical-software" class="nav-link" data-scroll-target="#open-source-statistical-software">Open source statistical software</a>
   <ul class="collapse">
   <li><a href="#software-with-a-graphical-user-interface" id="toc-software-with-a-graphical-user-interface" class="nav-link" data-scroll-target="#software-with-a-graphical-user-interface">Software with a graphical user interface</a></li>
@@ -131,7 +131,7 @@ window.Quarto = {
   <li><a href="#data-analyst-gpt" id="toc-data-analyst-gpt" class="nav-link" data-scroll-target="#data-analyst-gpt">Data Analyst GPT</a></li>
   <li><a href="#llm-in-ide" id="toc-llm-in-ide" class="nav-link" data-scroll-target="#llm-in-ide">LLM in IDE</a></li>
   </ul></li>
-  <li><a href="#spreadsheets" id="toc-spreadsheets" class="nav-link" data-scroll-target="#spreadsheets">Spreadsheets</a></li>
+  <li><a href="#spreadsheet-software" id="toc-spreadsheet-software" class="nav-link" data-scroll-target="#spreadsheet-software">Spreadsheet software</a></li>
   </ul></li>
   <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a></li>
   <li><a href="#recommendation" id="toc-recommendation" class="nav-link" data-scroll-target="#recommendation">Recommendation</a></li>
@@ -159,6 +159,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Statistical Software Options for Social Science Education</h1>
+<p class="subtitle lead">Recommendations and considerations for the Department of Communication Science at the University of Amsterdam</p>
 </div>
 
 
@@ -228,8 +229,8 @@ window.Quarto = {
 </ul></li>
 </ol>
 <p>In the following chapters we will reflect on the five software categories.</p>
-<section id="proprietary-statistical-software-with-a-graphical-user-interface" class="level2">
-<h2 class="anchored" data-anchor-id="proprietary-statistical-software-with-a-graphical-user-interface">Proprietary Statistical software with a graphical user interface</h2>
+<section id="proprietary-statistical-software" class="level2">
+<h2 class="anchored" data-anchor-id="proprietary-statistical-software">Proprietary Statistical software</h2>
 <p>A general benefit of the graphical user interface software packages is that apart from the relative ease of use, the different analysis already provide multiple additional options for assumption checks, Post hoc and contrast analysis and visualizations.</p>
 <p>And although the software is graphical in nature, it still provides syntax for reproduction and transparency in terms of open science.</p>
 <p>As the department is currently using SPSS, we will not go into detail about this software. Though it is worth mentioning the benefits of staying with SPSS for undergraduate education. Though many of our scientific staff are using R and Python, SPSS is still widely used in the department, 25% uses SPSS exclusively (see <a href="#sec-software-use" class="quarto-xref">Section&nbsp;5.2</a>). A change away from SPSS would require investment in time and resources in retraining employees. Though it is also worth noting that 32% of staff does not use SPSS at all (see <a href="#sec-software-use" class="quarto-xref">Section&nbsp;5.2</a>).</p>
@@ -242,7 +243,7 @@ window.Quarto = {
 <section id="software-with-a-graphical-user-interface" class="level3">
 <h3 class="anchored" data-anchor-id="software-with-a-graphical-user-interface">Software with a graphical user interface</h3>
 <p>Both <a href="https://jasp-stats.org">JASP</a> and <a href="https://www.jamovi.org">Jamovi</a> are open source statistical software packages that provide a graphical user interface. They are both based on R, and provide a similar set of analysis types as SPSS. They are both easy to use and provide a good introduction to statistical analysis. Though JASP provides an additional suite of Bayesian analysis, and is developed and maintained at the department of Psychology of the University of Amsterdam. Jamovi is a spin-off of the JASP project and maintained by a <a href="https://www.jamovi.org/about.html">core team of developers</a>.</p>
-<p>Though both are based on R and can produce syntax for the analysis that are performed, both use their own packages. For example a t test in R would be run with the function <code>t.test()</code>, while in JASP and Jamovi the functions are <code>jaspTTests::TTestIndependentSamples()</code> and <code>jmv::ttestIS()</code> respectively. This means that the syntax produced by JASP and Jamovi is not directly usable in R, and vice verse. This is a disadvantage for students who want to transition to R in a masters program, as they will have to learn a different set of functions.</p>
+<p>Though both are based on R and can produce syntax for the analysis that are performed, both use their own packages. For example a t test in R would be run with the function <code>t.test()</code>, while in JASP and Jamovi the functions are <code>jaspTTests::TTestIndependentSamples()</code> and <code>jmv::ttestIS()</code> respectively. This means that the syntax produced by JASP and Jamovi is not directly usable in R. This is a disadvantage for students who want to transition to R in a masters program, as they will have to learn a different set of functions.</p>
 <p>Both packages are still struggling with the data editor. The graphical user interface for both is not really intuitive, though both do allow to use R code in the data editor.</p>
 </section>
 <section id="statistical-programming-languages-with-a-command-line-interface" class="level3">
@@ -311,8 +312,8 @@ Figure&nbsp;2: GitHub Copilot in RStudio. Code suggestions for a linear regressi
 <p><a href="#fig-copilot" class="quarto-xref">Figure&nbsp;2</a> shows an example of GitHub Copilot in RStudio, where the LLM suggests code for a scatter plot in light grey. The suggested code takes the context of the previous code into account. Though, as can be seen, the comments requested a check on homoscedasticity, but the suggested code does not provide this. This shows the probabilistic nature of LLMs, and the need for students to check the code generated by the LLM. For students to use these types of integration’s, they would need to be familiar with the programming language used in the IDE. This means that students would need to learn R or Python as a prerequisite for using LLMs in RStudio or Jupyter Notebook.</p>
 </section>
 </section>
-<section id="spreadsheets" class="level2">
-<h2 class="anchored" data-anchor-id="spreadsheets">Spreadsheets</h2>
+<section id="spreadsheet-software" class="level2">
+<h2 class="anchored" data-anchor-id="spreadsheet-software">Spreadsheet software</h2>
 <p>Using Excel to teach statistics, especially in combination with the <a href="https://support.microsoft.com/nl-nl/office/analysis-toolpak-laden-in-excel-6a63e598-cd6d-42e3-9317-6b40ba1a66b4">Analysis Toolpack</a>, offers a very accessible and practical approach for students to learn statistical concepts. Many students are already familiar with Excel’s basic functions, so they can focus more quickly on understanding statistical techniques rather than struggling with a completely new software environment. The familiarity of Excel lowers the barrier to entry and allows instructors to emphasize the interpretation of results rather than the mechanics of calculation.</p>
 <p>The Analysis Toolpak extends Excel’s capabilities by offering ready-to-use procedures for key statistical analyses, such as descriptive statistics, correlation, regression, t-tests, and ANOVA. This enables students to perform fairly advanced analyses without needing to code or use more complex statistical packages right away. It also helps them to see the direct connection between data, formulas, and outputs, as shown in <a href="#fig-excel-t" class="quarto-xref">Figure&nbsp;3</a>. Students can watch calculations unfold in the spreadsheet, offering transparency that is sometimes hidden in black-box statistical software.</p>
 <div id="fig-excel-t" class="quarto-layout-panel">
