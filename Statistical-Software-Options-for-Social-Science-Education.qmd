@@ -22,7 +22,7 @@ The current software used in the curriculum is SPSS, which is widely used in soc
 
 Within the department we see a growing adoption in open-source software. In a short survey we concluded that there is about a 50/50 use of SPSS and R (see @sec-software-use). The research field is also moving towards open-source software, with many researchers using R and Python for their work. This trend is likely to continue. Though considering we educate our students in the bachelor program to become scientific practitioners, we need to consider the software they will use in their future careers, which is not necessarily a scientific career.
 
-A second consideration is the learning curve and didactical benefits of the software. The software should be easy to learn and use, and should provide a good balance between functionality and usability. The software should also be suitable for the level of the students, and should provide a good introduction to statistical analysis.
+A second consideration is the learning curve and didactic benefits of the software. The software should be easy to learn and use, and should provide a good balance between functionality and usability. The software should also be suitable for the level of the students, and should provide a good introduction to statistical analysis.
 
 The third an final consideration is about a single solution versus a combination of solutions. The software should be suitable for the entire curriculum, and should provide a good introduction to statistical analysis. However, it is also important to consider the possibility of using multiple software packages in the curriculum, as this can provide students with a broader range of skills and knowledge that can be useful in their future careers.
 
@@ -30,7 +30,7 @@ In the following chapters, we will give an overview of the different software op
 
 # Statistical Software Options
 
-For this chapter we broadly define five categories of software, and consider some packages for each category. Though the list is not exhaustive, it focusses on the key considerations.
+For this chapter we broadly define five categories of software, and consider some packages for each category. Though the list is not exhaustive, it focuses on the key considerations.
 
 Statistical software for education can be broadly categorized into five types. Proprietary statistical software with a graphical user interface (GUI), such as SPSS and STATA, offers user-friendly interfaces and comprehensive features but requires paid licenses. Open source statistical software with a GUI, like JASP and Jamovi, provides similar ease of use and promotes open science without the cost, though it may require additional training. Open source programming languages with a command line interface (CLI), such as R and Python, offer powerful and flexible tools for complex analyses and custom solutions, supported by large communities, but pose a steeper learning curve. Proprietary large language models, like ChatGPT's Data Analyst GPT, leverage advanced natural language processing to assist with data analysis and statistical tasks, offering personalized support but requiring subscription and verification of generated content. Lastly, proprietary spreadsheet software, such as Excel with the Analysis Toolpak, is widely accessible and familiar to many students, making it an easy entry point for learning statistics, though it necessitates careful data management to avoid errors.
 
@@ -71,13 +71,13 @@ Liability is often mentioned as a disadvantage of open-source software, since th
 
 Both [JASP](https://jasp-stats.org) and [Jamovi](https://www.jamovi.org) are open source statistical software packages that provide a graphical user interface. They are both based on R, and provide a similar set of analysis types as SPSS. They are both easy to use and provide a good introduction to statistical analysis. Though JASP provides an additional suite of Bayesian analysis, and is developed and maintained at the department of Psychology of the University of Amsterdam. Jamovi is a spin-off of the JASP project and maintained by a [core team of developers](https://www.jamovi.org/about.html).
 
-Though both are based on R and can produce syntax for the analysis that are performed, both use their own packages. For example a t test in R would be run with the function `t.test()`, while in JASP and Jamovi the funtions are `jaspTTests::TTestIndependentSamples()` and `jmv::ttestIS()` respectively. This means that the syntax produced by JASP and Jamovi is not directly usable in R, and vice versa. This is a disadvantage for students who want to transition to R in a masters program, as they will have to learn a different set of functions.
+Though both are based on R and can produce syntax for the analysis that are performed, both use their own packages. For example a t test in R would be run with the function `t.test()`, while in JASP and Jamovi the functions are `jaspTTests::TTestIndependentSamples()` and `jmv::ttestIS()` respectively. This means that the syntax produced by JASP and Jamovi is not directly usable in R, and vice verse. This is a disadvantage for students who want to transition to R in a masters program, as they will have to learn a different set of functions.
 
 Both packages are still struggling with the data editor. The graphical user interface for both is not really intuitive, though both do allow to use R code in the data editor.
 
 ### Statistical programming languages with a command line interface
 
-One of the main benefits of using a statistical programming language is that it allows for more didactical use cases. Where the graphical user interface software packages are mainly used for data analysis, the programming languages can also be used for learning the intermediate steps in statistics. For example: An independent t test in a textbook is often mathematically indicated as follows.
+One of the main benefits of using a statistical programming language is that it allows for more didactic use cases. Where the graphical user interface software packages are mainly used for data analysis, the programming languages can also be used for learning the intermediate steps in statistics. For example: An independent t test in a textbook is often mathematically indicated as follows.
 
 $$t = \frac{\bar{x} - \mu}{s_x}$$
 
@@ -96,13 +96,13 @@ t = (x.mean - mu) / x.sd
 ```
 
 
-$$\frac{\text{x.mean - mu}}{\text{x.sd}} = \frac{`r x.mean` - `r mu`}{`r x.sd`} = `r t`$$
+$$\frac{\text{x.mean - mu}}{\text{x.sd}} = \frac{`r round(x.mean,2)` - `r mu`}{`r round(x.sd,2)`} = `r round(t, 2)`$$
 
 This provides students the tools to understand the concepts behind the analysis, and in addition, introduces basic programming skills. For students that will only do the undergraduate program, this is a valuable help in learning statistics. And for students that will continue with a master program, this is a good introduction to programming.
 
 Though a statistical programming language provides many benefits, as it aligns with core values like open science and transparency, it also poses some hurdles in the learning process. These are mostly related to importing data, summarizing results and visualization. With the GUI based software packages these tasks are quite trivial, but for the CLI based interfaces the many options and packages make these tasks often overly complicated. Choosing a single approach like R [Tidyverse](https://www.tidyverse.org) could simplify the abundance of different methods.
 
-An additional hurdle is that extensive assumptions checks are often not available in the CLI based software packages. These either need additional packages or need to be done manually. For example, for the check on homoscedasticity, the `lm()` function in R does not provide a check for this assumption. For this an additional package would be needed or a scatterplot with residuals and predicted values would need to be created. Though it could be argued that these additional steps enhance the skills of students.
+An additional hurdle is that extensive assumptions checks are often not available in the CLI based software packages. These either need additional packages or need to be done manually. For example, for the check on homoscedasticity, the `lm()` function in R does not provide a check for this assumption. For this an additional package would be needed or a scatter plot with residuals and predicted values would need to be created. Though it could be argued that these additional steps enhance the skills of students.
 
 While R provides a more statistical computing environment, Python is more a general programming environment, but  with the addition of [NumPy](https://numpy.org) package it can be used for statistical analysis. Though additional packages like [pandas](https://pandas.pydata.org/pandas-docs/stable/index.html) is needed to work with data frames and importing data. The use of Python or R can be greatly simplified by using [Jupyter](https://jupyter.org) Notebook, which provides a web-based interface for writing and running Python code. Jupyter Notebook allows for interactive data analysis and visualization, making it easier for students to learn and experiment with Python, without the need for installation or configuration. Though there is an argument to be made that the use of Jupyter Notebook does not provide the skills of using an integrated development environment (IDE) like [RStudio](https://posit.co/download/rstudio-desktop/) or [PyCharm](PyCharm).
 
@@ -112,7 +112,7 @@ The use of large language models (LLMs) like ChatGPT in education is a rapidly e
 
 ### Data Analyst GPT
 
-ChatGPT, combined with the [Data Analyst GPT](https://mitsloanedtech.mit.edu/ai/tools/data-analysis/how-to-use-chatgpts-advanced-data-analysis-feature/), offers a powerful toolset for researchers and data scientists. By leveraging natural language processing and advanced data analysis capabilities, users can seamlessly interact with their data, ask complex questions, and receive insightful analyses without needing extensive coding skills. This combination can streamline exploratory data analysis, automate repetitive tasks, and generate visualizations. See @Fig-ChatGPT-analysis for an example of a moderation analysis generated by ChatGPT.
+ChatGPT, combined with the [Data Analyst GPT](https://mitsloanedtech.mit.edu/ai/tools/data-analysis/how-to-use-chatgpts-advanced-data-analysis-feature/), offers a powerful tool set for researchers and data scientists. By leveraging natural language processing and advanced data analysis capabilities, users can seamlessly interact with their data, ask complex questions, and receive insightful analyses without needing extensive coding skills. This combination can streamline exploratory data analysis, automate repetitive tasks, and generate visualizations. See @Fig-ChatGPT-analysis for an example of a moderation analysis generated by ChatGPT.
 
 ::: {#fig-ChatGPT-analysis layout="[50,50]"}
 ![](ScatterPlot.png)
@@ -131,7 +131,7 @@ The Data Analyst GPT leverages Python with appropriate packages to run analysis 
 
 The use of large language models (LLM) in integrated development environments (IDE) like RStudio and Jupyter Notebook can significantly enhance the learning experience for students. By integrating LLMs into these environments, students can receive real-time assistance while coding, making it easier to understand complex concepts and troubleshoot issues. This interactive support can help bridge the gap between theoretical knowledge and practical application, allowing students to focus on learning rather than getting stuck on coding challenges.
 
-Though it can also impede the learning proces as students can lean to heavily on the LLM for coding assistance, potentially hindering their ability to develop independent problem-solving skills. This reliance can lead to a lack of understanding of the underlying principles and concepts, as students may become accustomed to receiving instant solutions without fully grasping the reasoning behind them. To mitigate this risk, it is essential to encourage students to engage with the material actively, seek explanations for the code generated by the LLM, and practice coding independently.
+Though it can also impede the learning process as students can lean to heavily on the LLM for coding assistance, potentially hindering their ability to develop independent problem-solving skills. This reliance can lead to a lack of understanding of the underlying principles and concepts, as students may become accustomed to receiving instant solutions without fully grasping the reasoning behind them. To mitigate this risk, it is essential to encourage students to engage with the material actively, seek explanations for the code generated by the LLM, and practice coding independently.
 
 ::: {#fig-copilot fig-align="left"}
 ![](copilot.png){width=70% fig-align="left"}
@@ -139,7 +139,7 @@ Though it can also impede the learning proces as students can lean to heavily on
 GitHub Copilot in RStudio. Code suggestions for a linear regression model are shown in light grey.
 :::
 
-@Fig-copilot shows an example of GitHub Copilot in RStudio, where the LLM suggests code for a scatter plot in light grey. The suggested code takes the context of the previous code into account. Though, as can be seen, the comments requested a check on homoscedasticity, but the suggested code does not provide this. This shows the probabilistic nature of LLMs, and the need for students to check the code generated by the LLM. For students to use these types of integrations, they would need to be familiar with the programming language used in the IDE. This means that students would need to learn R or Python as a prerequisite for using LLMs in RStudio or Jupyter Notebook.
+@Fig-copilot shows an example of GitHub Copilot in RStudio, where the LLM suggests code for a scatter plot in light grey. The suggested code takes the context of the previous code into account. Though, as can be seen, the comments requested a check on homoscedasticity, but the suggested code does not provide this. This shows the probabilistic nature of LLMs, and the need for students to check the code generated by the LLM. For students to use these types of integration's, they would need to be familiar with the programming language used in the IDE. This means that students would need to learn R or Python as a prerequisite for using LLMs in RStudio or Jupyter Notebook.
 
 ## Spreadsheets
 
@@ -156,7 +156,7 @@ T test calculated in Excel, and a few analysis options in the analysis tool.
 :::
 
 
-Moreover, Excel forces students to engage closely with the data. They often have to structure, clean, and select their datasets carefully before analysis, which teaches important data-handling skills that are crucial for real-world applications. In professional settings, many organizations still use Excel for data analysis, especially for quick insights or preliminary investigations. Learning to perform statistics in Excel therefore not only strengthens theoretical understanding but also builds practical skills that are highly valued in the workplace.
+Moreover, Excel forces students to engage closely with the data. They often have to structure, clean, and select their data sets carefully before analysis, which teaches important data-handling skills that are crucial for real-world applications. In professional settings, many organizations still use Excel for data analysis, especially for quick insights or preliminary investigations. Learning to perform statistics in Excel therefore not only strengthens theoretical understanding but also builds practical skills that are highly valued in the workplace.
 
 While using Excel with the Analysis Toolpak can be very beneficial, there are some critical points to watch out for. One major risk is the potential for errors when manipulating data. Excel’s flexibility means it’s easy to accidentally move, overwrite, or delete data, which can lead to incorrect results. Unlike more specialized statistical software that often locks data or provides a clear audit trail, Excel’s open editing environment makes it harder to track changes and ensure data integrity.
 
@@ -169,7 +169,7 @@ Based on the overview of statistical software options, we can draw several concl
 1. Leaving SPSS for an alternative GUI based software package like JASP or Jamovi or STATA does not provide significant benefits. Our staff is currently mostly familiar with SPSS, and is even more proficient in R and Python. A switch to another GUI based software package would seem to be an unnecessary burden on teachers that are already proficient with other packages.
 2. A switch to open source software would be beneficial for students, as they would not have to pay for student licenses. Though it has to be considered that the university would still need to pay for SPSS licenses, as other departments are still using it. From a value perspective, open source software aligns more closely with the core principles of science, such as transparency and reproducibility. While this alignment is an important consideration, we predict that the associated costs can only outweigh the benefits if a switch to R and/or Python is made, as most of our staff is already proficient in these languages.
 3. Switching to a LMM based solution like ChatGPT's Data Analyst GPT would require students to learn Python as a prerequisite. For our undergraduate education this would be a significant hurdle, as most students do not have any programming experience, and are probably not interested in a career where these skills are required. Though for master students this could be a viable option, as they are more likely to have programming experience and are more likely to pursue a career where these skills are required. There are also no non commercial alternatives available yet.
-4. Using Excel can be a very accessible way to introduce students to statistical concepts. It is easy to learn and widely used in the industry. Though it has to be considered that the Analysis Toolpack is not suitable for large datasets or complex statistical models. It can be a good option for introductory courses where students learn about data organization, descriptive statistics, and visualization.
+4. Using Excel can be a very accessible way to introduce students to statistical concepts. It is easy to learn and widely used in the industry. Though it has to be considered that the Analysis Toolpack is not suitable for large data sets or complex statistical models. It can be a good option for introductory courses where students learn about data organization, descriptive statistics, and visualization.
 
 # Recommendation
 
@@ -187,7 +187,7 @@ The following combinations are suggested for the five-year trajectory:
 
 | Study Year | Software | Comments |
 |------------|----------|----------|
-| Bachelor 1 | Excel + SPSS | Excel for statistical calculations and table visualisations; SPSS for introductory statistical analysis. |
+| Bachelor 1 | Excel + SPSS | Excel for statistical calculations and table visualizations; SPSS for introductory statistical analysis. |
 | Bachelor 2 | SPSS + R | SPSS for continued statistical analysis; R for introducing programming concepts and statistical calculations |
 | Bachelor 3 | SPSS or R | Depending on student interest and graduation project, focus on either SPSS or R. |
 | Master 1 | SPSS or R | Continue with the chosen software from Bachelor 3, depending also on choosing a regular masters of research masters program |
@@ -201,7 +201,7 @@ While we recommend a multi-software approach as the most effective strategy to p
 
 ### SPSS
 
-SPSS (Statistical Package for the Social Sciences) is one of the most widely used tools in social science education. It offers an intuitive, menu-driven interface with minimal coding, making it ideal for beginners. It has been used for many years in academic research and industry, particularly in fields like psychology, sociology, and market research.
+SPSS (Statistical Package for the Social Sciences) is one of the most widely used tools in social science education. It offers an intuitive, menu-driven interface with minimal coding, making it ideal for beginners. It has been used for decades in academic research and industry, particularly in fields like psychology, sociology, and market research.
 
 Key Features:
 
@@ -232,12 +232,12 @@ Key Features:
 
 * Command-line interface with point-and-click support
 * Suitable for regression analysis, time series, and panel data
-* Extensive support for large datasets and econometric modeling
+* Extensive support for large data sets and econometric modeling
 
 Advantages:
 
 * Strong support for social science research
-* Faster processing of large datasets
+* Faster processing of large data sets
 * Used by academic researchers and policy analysts
 
 Limitations:
@@ -347,7 +347,7 @@ Limitations:
 * Students need to install and manage libraries and environments
 
 Use Cases:  
-Suitable for advanced bachelor courses in data science, computational social science, and research with large, complex datasets.
+Suitable for advanced bachelor courses in data science, computational social science, and research with large, complex data sets.
 
 ### Jupyter Notebook
 
@@ -392,7 +392,7 @@ Advantages:
 Limitations:
 
 * Limited statistical functionality compared to SPSS, R, or Python
-* Not suitable for large datasets or complex statistical models
+* Not suitable for large data sets or complex statistical models
 
 Use Cases:  
 Useful for introductory courses where students learn about data organization, descriptive statistics, and visualization.
@@ -422,7 +422,7 @@ LLMs can supplement learning by providing personalized support for students work
 
 ## Statistical software use at communication science {#sec-software-use}
 
-In a short survey among the scientific staff of the department of communication science, we asked an open question about the use of statistical software in their research and teaching. The categorised results are shown in @tbl-software-use-categorized. In total we received 64 responses, which is a response rate of about `r 64/192`%. The results in @tbl-software-use show that the majority of the staff uses R (63%) and SPSS (67%) in their research. Python is used by 22%. 
+In a short survey among the scientific staff of the department of communication science, we asked an open question about the use of statistical software in their research and teaching. The categorized results are shown in @tbl-software-use-categorized. In total we received 64 responses, which is a response rate of about `r round(64/192*100,0)`%. The results in @tbl-software-use show that the majority of the staff uses R (63%) and SPSS (67%) in their research. Python is used by 22%. 
 
 ```{r}
 #| label: tbl-software-use
@@ -451,7 +451,7 @@ Most staff indicate to be familiar with both R and SPSS (@tbl-software-use-categ
 #| echo: false
 #| tbl-cap: Categorized statistical software use among scientific staff at communication science (N = 64).
 
-# Impor excel document
+# Import excel document
 library(readxl)
 software.use.raw <- read_excel("../../OneDrive - UvA/Projecten/Statistical software use CW/Statistical software use at CW.xlsx", sheet = "Data")
 
