@@ -422,7 +422,7 @@ LLMs can supplement learning by providing personalized support for students work
 
 ## Statistical software use at communication science {#sec-software-use}
 
-In a short survey among the scientific staff of the department of communication science, we asked an open question about the use of statistical software in their research and teaching. The categorised results are shown in @tbl-software-use-categorized. In total we received 64 responses, which is a response rate of about 50%. The results in @tbl-software-use show that the majority of the staff uses R (63%) and SPSS (67%) in their research. Python is used by 22%. 
+In a short survey among the scientific staff of the department of communication science, we asked an open question about the use of statistical software in their research and teaching. The categorised results are shown in @tbl-software-use-categorized. In total we received 64 responses, which is a response rate of about `r 64/192`%. The results in @tbl-software-use show that the majority of the staff uses R (63%) and SPSS (67%) in their research. Python is used by 22%. 
 
 ```{r}
 #| label: tbl-software-use
